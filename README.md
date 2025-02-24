@@ -33,6 +33,9 @@ schedulo run --date 01/03/25
 # List out all the jobs
 schedulo list
 
+# Display the next N execution times
+schedulo next <job_id> --count 3 
+
 # Status the jobs
 schedulo status <job_id>
 
@@ -47,8 +50,6 @@ schedulo reset
 ```
 
 Future Enhancements to lookout for:
-
-- Web UI for job visualization.
 - Support scheduling HTTP calls natively.
 - Job dependency runner (run job B after job A completes).
 - Distributed execution using a message queue (e.g., RabbitMQ, Kafka).
